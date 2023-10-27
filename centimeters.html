@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cm to inches</title>
+    <link rel="stylesheet" href="unit.css" type="text/css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navlink">Home</a>
+        <a href="#centimeters" class="navlink">Centimeters to inches</a>
+        <a href="inches.html" class="navlink">Inches to Centimeters</a>
+        <a href="kilom.html" class="navlink">Kilometers to Meters</a>
+        <a href="meters.html" class="navlink">Meters to Kilometers</a>
+    </nav>
+    <div class="Main">  
+      <div class="heading">
+        <h1>Convert Centimeters to Inches</h1>   
+        <div class="centimeters">  
+            <label>Centimeters:</label>
+            <input type="text" id="cm"><br><br>
+            <button id="convert" onclick="convert()">Convert</button><br><br>
+            <label>Inches:</label>
+            <input type="text" id="inches">
+        </div>
+        </div>
+    </div>  
+    <script>
+        function convert() {
+            let cm = document.getElementById("cm").value;
+            let inches = cm / 2.54;
+            document.getElementById("inches").value = inches;
+        }
+    </script>
+</body>
+</html>

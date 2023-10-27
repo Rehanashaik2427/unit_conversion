@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kilometers to meters</title>
+    <link rel="stylesheet" href="unit.css" type="text/css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navlink">Home</a>
+        <a href="centimeters" class="navlink">Centimeters to inches</a>
+        <a href="inches.html" class="navlink">Inches to Centimeters</a>
+        <a href="#kilom" class="navlink">Kilometers to Meters</a>
+        <a href="meters.html" class="navlink">Meters to Kilometers</a>
+    </nav>
+    <div class="Main">  
+      <div class="heading">
+        <h1>Convert Kilometers to Meters</h1>   
+        <div class="kilometers">  
+            <label>Kilometers:</label>
+            <input type="text" id="km"><br><br>
+            <button id="convert" onclick="convert()">Convert</button><br><br>
+            <label>Meters:</label>
+            <input type="text" id="meters">
+        </div>
+        </div>
+    </div>  
+    <script>
+        function convert() {
+            let km = document.getElementById("km").value;
+            let meters = km * 1000; // 1 kilometer = 1000 meters
+            document.getElementById("meters").value = meters;
+        }
+    </script>
+</body>
+</html>

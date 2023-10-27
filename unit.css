@@ -1,0 +1,60 @@
+.body{
+    width:100vw;
+    height: 100vh;
+    background-color: plum;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    text-align: center;
+    border: 4px solid black;
+    padding: 20px;
+}
+.box{
+    text-align: center;
+    border: 2px double black;
+    margin: 20px;
+}
+
+
+/* navbar */
+.navbar{
+    font-size: 20px;
+    background-color: silver;
+    margin-bottom:0px;
+    padding: 25px;
+}
+.navlink{
+    margin: 50px;
+}
+.Main{
+    width:100vw;
+    height: 100vh;
+    background-color: rgb(160, 206, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centimeters,.inches,.kilometers,.meters{
+    text-align: center;
+    border: 4px solid black;
+    padding: 20px;
+    background-color:bisque;
+}
+
+.inches{
+    background-color:seagreen
+}
+.meters{
+    background-color: darkorange;
+}
+.kilometers{
+    background-color: lightseagreen;
+}
+
+#convert{
+    position: relative;
+    left: 30px;
+    background-color: deepskyblue;
+}
